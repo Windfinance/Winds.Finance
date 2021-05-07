@@ -1,0 +1,81 @@
+@import 'assets/colors.scss';
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	width: 100%;
+	color: $color-black;
+	max-width: 60%;
+	margin: 0 auto;
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 123213132;
+
+	&__logo {
+		max-width: 19rem;
+	}
+
+	&__navigation {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row;
+
+		li {
+			margin-left: 4rem;
+			border-bottom: 0.1rem solid transparent;
+			transition: ease-in-out 250ms;
+
+			&:hover {
+				border-color: #11ca91;
+
+				a {
+					color: #11ca91;
+				}
+			}
+
+			a {
+				text-decoration: none;
+				color: $color-black;
+				font-weight: 500;
+				transition: ease-in-out;
+			}
+		}
+	}
+
+	.trade {
+		border-radius: 0.8rem;
+		height: 2.8rem;
+		width: 10rem;
+		background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca91 90.25%);
+		color: $color-white;
+		font-size: 1.8rem;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0rem 1rem 2rem #11ca9147;
+		cursor: pointer;
+		transition: ease-in-out 250ms;
+
+		a {
+			color: $color-white;
+
+			&:hover {
+				color: $color-white !important;
+			}
+		}
+
+		&:hover {
+			transition: ease-in-out 250ms;
+			background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca9185 90.25%);
+
+			a {
+				color: $color-white !important;
+			}
+		}
+	}
+}

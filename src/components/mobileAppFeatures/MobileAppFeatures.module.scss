@@ -1,0 +1,70 @@
+@import 'assets/colors.scss';
+
+.main {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	height: 75vh;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+
+	img {
+		// max-height: 61.7rem;
+		max-height: 55vh;
+		max-width: 64.7rem;
+	}
+
+	&__content {
+		h2 {
+			font-size: 3.6rem;
+			font-weight: bold;
+			color: $color-black;
+			padding-bottom: 1.3rem;
+			margin-bottom: 1rem;
+			line-height: normal;
+
+			span {
+				color: #27df9d;
+			}
+		}
+
+		ul {
+			color: $color-black;
+			font-size: 1.8rem;
+			display: flex;
+			flex-direction: column;
+			padding-left: 0.5rem;
+
+			li {
+				padding-bottom: 1rem;
+				color: #446369;
+				display: flex;
+				align-items: center;
+
+				img {
+					margin-right: 1rem;
+					width: 2.2rem;
+				}
+
+				span {
+					color: #27df9d;
+				}
+			}
+		}
+	}
+}
+
+// --e-global-color-primary: #042A33;
+//     --e-global-color-secondary: #1C292C;
+//     --e-global-color-text: #30464A;
+//     --e-global-color-accent: #446369;
+//     --e-global-color-abc70fe: #588088;
+//     --e-global-color-a1fa903: #90B0B7;
+//     --e-global-color-c749459: #AFC6CB;
+//     --e-global-color-dcd0917: #FFFFFF;
+//     --e-global-color-3874982: #27DF9D;
+//     --e-global-color-918a426: #F4FDFA;
+//     --e-global-color-faca0b1: #F0F4F5;
+//     --e-global-color-776c61c: #3ACBD0;

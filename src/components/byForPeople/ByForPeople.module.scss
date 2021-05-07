@@ -1,0 +1,93 @@
+@import 'assets/colors.scss';
+
+.main {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-image: linear-gradient(180deg, $color-white 50%, #f4fdfa 50%);
+
+	&__container {
+		width: 60%;
+		background-color: transparent;
+		background-image: linear-gradient(170deg, #3acbd0 14%, #11ca91 69%);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 2.4rem;
+		margin: 0 auto;
+		padding: 3rem 4rem;
+		height: 32.8rem;
+		position: relative;
+
+		h2 {
+			color: $color-white;
+			font-size: 3.6rem;
+		}
+
+		h2,
+		p {
+			margin: 0;
+		}
+
+		p {
+			color: $color-white;
+			font-size: 1.4rem;
+			font-weight: 500;
+		}
+	}
+
+	.robot {
+		position: absolute;
+		width: 22rem;
+		top: 0rem;
+		right: -9rem;
+	}
+
+	&__button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		width: 80%;
+		justify-content: space-evenly;
+
+		button {
+			border-radius: 0.8rem;
+			height: 4.8rem;
+			color: #27df9d;
+			color: $color-white;
+			// background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca91 90.25%);
+			border: 0.1rem solid $color-white;
+			font-weight: bold;
+			width: 15rem;
+			// box-shadow: 0rem 1rem 2rem #ffffff69;
+			box-shadow: 0rem 0.1rem 1rem #ffffff69;
+			margin-top: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			transition: 250ms ease-in-out;
+
+			&:first-of-type {
+				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
+			}
+
+			span {
+				padding-left: 1rem;
+			}
+
+			img {
+				width: 2rem;
+			}
+
+			&:focus,
+			&:hover {
+				color: $color-white;
+				border-color: $color-white;
+				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
+			}
+		}
+	}
+}

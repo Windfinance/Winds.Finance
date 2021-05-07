@@ -1,0 +1,98 @@
+@import 'assets/colors.scss';
+
+.main {
+	display: flex;
+	height: 100%;
+	min-height: 75vh;
+	position: relative;
+	width: 100%;
+
+	img {
+		width: 100%;
+		max-width: 100vh;
+		position: absolute;
+		top: 10rem;
+		right: 0;
+	}
+
+	&__text {
+		margin-left: 20%;
+		margin-top: 30rem;
+		z-index: 123;
+		color: $color-black;
+
+		h2 {
+			font-size: 4.2rem;
+
+			span {
+				color: $color-main;
+				font-weight: bold;
+			}
+		}
+
+		p {
+			font-size: 2.2rem;
+			color: grey;
+			width: 40%;
+
+			span {
+				color: $color-black;
+				font-weight: 600;
+			}
+		}
+
+		div {
+			position: relative;
+		}
+
+		&--button-app {
+			border-radius: 0.8rem;
+			height: 4.8rem;
+			width: 20rem;
+			text-decoration: none;
+			// background: #d6d6d6;
+			background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca91 90.25%);
+			color: $color-white;
+			font-size: 1.8rem;
+			font-weight: bold;
+			transition: ease-in-out 250ms;
+			margin-left: 2rem;
+
+			&:hover {
+				color: $color-white;
+				background: #d6d6d6;
+				background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca9185 90.25%);
+			}
+		}
+
+		&--button {
+			border-radius: 0.8rem;
+			height: 4.8rem;
+			width: 20rem;
+			background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca91 90.25%);
+			color: $color-white;
+			font-size: 1.8rem;
+			font-weight: bold;
+			box-shadow: 0rem 1rem 2rem #11ca9147;
+			transition: ease-in-out 250ms;
+
+			&:hover {
+				transition: ease-in-out 250ms;
+				background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca9185 90.25%);
+				opacity: 0.8;
+				color: $color-white;
+			}
+
+			&:focus {
+				color: $color-white;
+			}
+		}
+	}
+
+	.comming-soon {
+		position: absolute;
+		top: 0;
+		padding: 1rem 2rem;
+		border: 1px solid black;
+	}
+}
