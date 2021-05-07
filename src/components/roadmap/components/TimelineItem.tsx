@@ -12,6 +12,7 @@ interface ITimelineItem {
 			url?: string;
 			text?: string;
 		};
+		list: string[];
 		check: boolean;
 	};
 }
@@ -24,12 +25,17 @@ function TimelineItem({ data }: ITimelineItem) {
 					{data.category.tag}
 				</span>
 				<time>{data.date}</time>
-				<p>{data.text}</p>
-				{data.link && (
+				<p></p>
+				<ul>
+					{data?.list?.map((li, key) => (
+						<li key={key}>{li}</li>
+					))}
+				</ul>
+				{/* {data.link && (
 					<a href={data.link.url} target='_blank' rel='noopener noreferrer'>
 						{data.link.text}
 					</a>
-				)}
+				)} */}
 				{data.check ? (
 					<img className={styles.check} src={require('assets/images/iconfinder_Checkmark_2190986.svg')} alt='avatar' />
 				) : (

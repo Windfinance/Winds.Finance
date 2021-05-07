@@ -7,7 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	margin: 40px 0;
+	margin: 4rem 0 8rem;
 }
 
 .timeline-container::after {
@@ -17,7 +17,7 @@
 	position: absolute;
 	left: calc(50% - 2px);
 	width: 4px;
-	height: 100%;
+	height: calc(100% + 8rem);
 }
 
 .timeline-item {
@@ -45,7 +45,7 @@
 	align-items: flex-end;
 	padding: 15px;
 	position: relative;
-	width: 400px;
+	min-width: 400px;
 	max-width: 70%;
 	text-align: right;
 }
@@ -172,6 +172,9 @@
 	background-color: var(--e-global-color-dcd0917);
 	border-radius: 17px 17px 17px 17px;
 	box-shadow: 0px 4px 10px 0px rgb(8 15 52 / 6%);
+	text-align: center;
+	width: 30rem;
+	margin: 0 auto;
 
 	p {
 		font-size: 2.2rem;
