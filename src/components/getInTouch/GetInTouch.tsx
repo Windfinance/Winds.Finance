@@ -8,7 +8,7 @@ function GetInTouch() {
 	};
 
 	return (
-		<div className={styles.main}>
+		<div id='Contact' className={styles.main}>
 			<div className={styles.container}>
 				<div className={styles['container__box-left']}>
 					<h2>

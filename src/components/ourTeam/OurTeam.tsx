@@ -2,7 +2,7 @@ import styles from './OurTeam.module.scss';
 
 function OurTeam() {
 	return (
-		<div className={styles.main}>
+		<div id='Team' className={styles.main}>
 			<h1>
 				Meet The Team<span>.</span>
 			</h1>

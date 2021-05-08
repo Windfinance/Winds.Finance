@@ -1,29 +1,33 @@
 import styles from './Navigation.module.scss';
 import Link from 'next/link';
 import Tooltip from '../Tooltip';
+import SmoothScroll from 'shared/functions/SmoothScroll';
 
 function Navigation() {
+	const Scroll = (section: string) => {
+		SmoothScroll.scrollTo(section);
+	};
+
 	return (
 		<div className={styles.main}>
 			<img className={styles['main__logo']} src={require('assets/images/x.svg')} alt='avatar' />
-			{/* <img className={styles['main__logo']} src={require('assets/images/logo3.svg')} alt='avatar' /> */}
 
 			<ul className={styles['main__navigation']}>
 				<li>
-					<Link href={'/'}>Features</Link>
+					<a onClick={() => Scroll('About')}>About</a>
 				</li>
 
 				<li>
-					<Link href={'/'}>Tokenomics</Link>
+					<a onClick={() => Scroll('Tokenomics')}>Tokenomics</a>
 				</li>
 
 				<li>
-					<Link href={'/'}>Roadmap</Link>
+					<a onClick={() => Scroll('Roadmap')}>Roadmap</a>
 				</li>
 
 				<li>
 					<Tooltip title={'Comming Soon'}>
-						<Link href={'/'}>Litepaper</Link>
+						<a>Litepaper</a>
 					</Tooltip>
 				</li>
 

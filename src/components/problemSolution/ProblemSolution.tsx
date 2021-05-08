@@ -2,7 +2,7 @@ import styles from './ProblemSolution.module.scss';
 
 function ProblemSolution() {
 	return (
-		<div className={styles.main}>
+		<div id='About' className={styles.main}>
 			<div className={styles.container}>
 				<h1>
 					Winds Finance Solves The Biggest Pain Point In Crypto <span>!</span>

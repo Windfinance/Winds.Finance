@@ -4,19 +4,36 @@ import TimelineItem from './TimelineItem';
 function Timeline() {
 	const timelineData = [
 		{
-			date: 'May and June of 2021',
+			date: 'December, January, February, and March of 2021',
 			category: {
-				tag: 'May and June of 2021',
+				tag: 'Q4 2020 & Q1 2021 ',
 				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
 			},
 
 			check: true,
 			list: [
-				'- Winds Finance Wallet Release Desktop & Mobile',
-				'- Coingecko Listing',
-				'- CoinMarketCap Listing',
-				'- Partnerships with Social Media Influencers',
-				'- Winds Finance Stacking Desktop'
+				'Ideas and Passions Eruption  ',
+				'Team Assemble  ',
+				'Preparations of Development Environment  ',
+				'Backend & Apis Developed  ',
+				'Token Creation  ',
+				'Website Creation'
+			]
+		},
+		{
+			date: 'May and June of 2021',
+			category: {
+				tag: 'Q2 2021',
+				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
+			},
+
+			check: false,
+			list: [
+				'   Winds Finance Wallet Release Desktop & Mobile',
+				'   Coingecko Listing',
+				'   CoinMarketCap Listing',
+				'   Partnerships with Social Media Influencers',
+				'   Winds Finance Stacking Desktop'
 			]
 		},
 		{
@@ -26,14 +43,14 @@ function Timeline() {
 				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
 			},
 
-			check: true,
+			check: false,
 			list: [
-				' Winds Finance Decentralized Banking Desktop -',
-				'Winds Finance Mobile Decentralized Exchange Desktop - ',
-				'Developers AMA - ',
-				'Exchange Listings  - ',
-				'Integration of all DEX’s into Winds Finance  - ',
-				'Additional Partnerships   - '
+				'Winds Finance Decentralized Banking Desktop ',
+				'Winds Finance DEX Desktop  ',
+				'Developers AMA  ',
+				'Exchange Listings   ',
+				'Integration of all DEX’s into Winds Finance ',
+				'Additional Partnerships    '
 			]
 		},
 		{
@@ -43,12 +60,12 @@ function Timeline() {
 				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
 			},
 
-			check: true,
+			check: false,
 			list: [
-				'- Winds Finance Stacking Mobile',
-				'- Winds Finance Decentralized Banking Mobile',
-				'- Winds Finance Mobile Decentralized Exchange Mobile',
-				'- Major Exchange Listing'
+				'Winds Finance Stacking Mobile',
+				'Winds Finance Decentralized Banking Mobile',
+				'Winds Finance Mobile DEX Mobile',
+				'Major Exchange Listing'
 			]
 		},
 		{
@@ -58,12 +75,12 @@ function Timeline() {
 				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
 			},
 
-			check: true,
+			check: false,
 			list: [
-				'- Fiat Gateway for Winds Finance Desktop and Mobile Version',
-				'- Announcing DeFi Partnerships for winds finance DEX',
-				'- Live Token based Governance',
-				'- Partnership with other Protocols '
+				' Fiat Gateway for Winds Finance Desktop and Mobile Version',
+				' Announcing DeFi Partnerships for winds finance DEX',
+				' Live Token based Governance',
+				' Partnership with other Protocols '
 			]
 		},
 		{
@@ -73,8 +90,8 @@ function Timeline() {
 				color: 'linear-gradient(170deg, #3acbd0 14%, #11ca91 69%)'
 			},
 
-			check: true,
-			list: ['- Winds Finance Liquidity Pool Merchants', '- NFT project Announcement', '- Multi Chain integration']
+			check: false,
+			list: [' Winds Finance Liquidity Pool Merchants', ' NFT project Announcement', ' Multi Chain integration']
 		}
 	];
 

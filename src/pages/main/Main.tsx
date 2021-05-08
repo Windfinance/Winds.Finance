@@ -9,20 +9,35 @@ import ProblemSolution from 'components/problemSolution';
 import GetInTouch from 'components/getInTouch';
 import RoadMap from 'components/roadmap';
 import Tokenomics from 'components/tokenomics';
+import SmoothScroll from 'shared/functions/SmoothScroll';
 
 function Main() {
+	const Scroll = (section: string) => {
+		SmoothScroll.scrollTo(section);
+	};
+
 	return (
 		<div className={styles.main}>
 			<Navigation />
+
 			<Header />
+
 			<Features />
+
 			<ProblemSolution />
+
 			<MobileAppFeatures />
+
 			<ByForPeople />
-			{/* <OurTeam /> */}
+
+			<OurTeam />
+
 			<RoadMap />
+
 			<Tokenomics />
+
 			<GetInTouch />
+
 			<div className={styles.footer}>
 				<div className={styles['footer__container']}>
 					<div className={styles['bottom-nav']}>
@@ -30,15 +45,15 @@ function Main() {
 
 						<div className={styles.nav}>
 							<ul>
-								<li>Home</li>
+								<li onClick={() => Scroll('Header')}>Home</li>
 
-								<li>About</li>
+								<li onClick={() => Scroll('About')}>About</li>
 
-								<li>Team</li>
+								<li onClick={() => Scroll('Team')}>Team</li>
 
-								<li>Token</li>
+								<li onClick={() => Scroll('Tokenomics')}>Token</li>
 
-								<li>Contact</li>
+								<li onClick={() => Scroll('Contact')}>Contact</li>
 							</ul>
 						</div>
 					</div>

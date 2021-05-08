@@ -7,76 +7,76 @@
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
-	height: 50vh;
-
-	h1 {
-		margin: 0;
-		font-size: 3.6rem;
-		font-weight: bold;
-		color: #000000;
-		padding-bottom: 1.3rem;
-		margin-bottom: 3rem;
-
-		span {
-			color: #27df9d;
-		}
-	}
+	padding: 14rem 2.4rem 14rem 2.4rem;
+	margin: 0 auto;
 
 	.container {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		margin: 0 auto;
-		// height: 100%;
-		width: 100%;
-		width: 60%;
-		flex-wrap: wrap;
-	}
-
-	.feature-box {
-		box-shadow: 0px 4px 12px 0px rgb(8 15 52 / 6%);
-		// width: 100%;
-		width: 20rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 3rem;
-		text-align: center;
-		height: 100%;
-		max-height: 20rem;
-		margin: 0 1rem 1rem;
-		transition: ease-in-out 250ms;
-
-		&:hover {
-			transition: ease-in-out 250ms;
-			transform: translate3d(0.2rem, 0.2rem, 1rem);
-		}
-
-		p {
-			color: $color-black;
-			font-size: 1.8rem;
-			font-weight: bold;
+		h1 {
 			margin: 0;
-			line-height: initial;
+			font-size: 3.6rem;
+			font-weight: bold;
+			color: #000000;
+			padding-bottom: 1.3rem;
+			margin-bottom: 3rem;
 
 			span {
-				color: $color-grey-2;
+				color: #27df9d;
 			}
 		}
 
-		&:hover {
+		.container {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			margin: 0 auto;
+			width: 100%;
+			width: 60%;
+			flex-wrap: wrap;
+		}
+
+		.feature-box {
+			box-shadow: 0px 4px 12px 0px rgb(8 15 52 / 6%);
+			width: 20rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 3rem;
+			text-align: center;
+			height: 20rem;
+			margin: 0 1rem 1rem;
 			transition: ease-in-out 250ms;
-			background: #00000003;
 
-			img {
+			&:hover {
 				transition: ease-in-out 250ms;
-				transform: rotate(-10deg);
+				transform: translate3d(0.2rem, 0.2rem, 1rem);
+			}
+
+			p {
+				color: $color-black;
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin: 0;
+				line-height: initial;
+
+				span {
+					color: $color-grey-2;
+				}
+			}
+
+			&:hover {
+				transition: ease-in-out 250ms;
+				background: #00000003;
+
+				img {
+					transition: ease-in-out 250ms;
+					transform: rotate(-10deg);
+				}
 			}
 		}
-	}
 
-	img {
-		max-width: 6.9rem;
-		margin-bottom: 1rem;
+		img {
+			max-width: 6.9rem;
+			margin-bottom: 1rem;
+		}
 	}
 }

@@ -4,11 +4,10 @@ import Tooltip from '../Tooltip';
 
 function Header() {
 	return (
-		<div className={styles.main}>
+		<div id='Header' className={styles.main}>
 			<div className={styles['main__text']}>
 				<h2>
 					Let the <span>$Winds</span> Guide You
-					{/* <br /> To Fortune */}
 				</h2>
 
 				<p>
@@ -29,8 +28,6 @@ function Header() {
 							APP
 						</Button>
 					</Tooltip>
-
-					{/* <div className={styles['comming-soon']}>Comming Soon</div> */}
 				</div>
 			</div>
 
