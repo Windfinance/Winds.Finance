@@ -84,6 +84,12 @@
 
 			&:first-of-type {
 				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
+				margin-right: 2rem;
+			}
+
+			&:last-of-type {
+				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
+				margin-left: 2rem;
 			}
 
 			span {

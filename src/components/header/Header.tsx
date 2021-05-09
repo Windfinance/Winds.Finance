@@ -18,11 +18,12 @@ function Header() {
 				</p>
 
 				<div>
-					<Button className={styles['main__text--button']} onClick={() => console.log('clicked')}>
+					<Button className={styles['button']} onClick={() => console.log('clicked')}>
 						Buy on PancakeSwap
 					</Button>
+
 					<Tooltip title={'Comming Soon'}>
-						<Button className={styles['main__text--button-app']} onClick={() => console.log('clicked')}>
+						<Button className={styles['button-app']} onClick={() => console.log('clicked')}>
 							APP
 						</Button>
 					</Tooltip>
