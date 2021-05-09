@@ -1,7 +1,6 @@
 import styles from './Header.module.scss';
 import { Button } from 'antd';
 import Tooltip from '../Tooltip';
-import Fade from 'react-reveal/Fade';
 
 function Header() {
 	return (
@@ -31,7 +30,6 @@ function Header() {
 			</div>
 
 			<img src={require('assets/images/22.webp')} alt='avatar' />
-			{/* <Image layout='fill' objectFit='cover' className={styles.image} src={require('assets/images/22.webp')} alt='avatar' /> */}
 		</div>
 	);
 }

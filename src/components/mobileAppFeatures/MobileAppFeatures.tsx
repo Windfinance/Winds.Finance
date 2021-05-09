@@ -10,6 +10,7 @@ function MobileAppFeatures() {
 						Winds.Finance Mobile App Capabilities<span>.</span>
 					</h2>
 				</Fade>
+
 				<Fade left>
 					<ul>
 						<li>
