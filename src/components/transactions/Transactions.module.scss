@@ -1,0 +1,50 @@
+@import 'assets/colors.scss';
+
+.main {
+	margin: 0 auto;
+	padding: 14rem 2.4rem 0rem 2.4rem;
+	position: relative;
+
+	.container {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		.box {
+			box-shadow: 0rem 0.4rem 1.2rem 0rem rgb(8 15 52 / 6%);
+			width: 30rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 3rem;
+			text-align: center;
+			height: 30rem;
+			margin: 0 1rem 1rem;
+			transition: ease-in-out 250ms;
+			background: $color-white;
+
+			p {
+				color: $color-black;
+				font-size: 1.8rem;
+				font-weight: bold;
+				margin: 0;
+				line-height: initial;
+				color: #000000d9;
+			}
+		}
+
+		img {
+			max-width: 10rem;
+			margin: 2rem;
+		}
+	}
+
+	.robot {
+		position: absolute;
+		width: 22rem;
+		top: 0rem;
+		left: 0;
+		-webkit-transition: 300ms;
+	}
+}

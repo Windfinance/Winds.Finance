@@ -21,6 +21,7 @@
 		},
 		"downlevelIteration": true
 	},
+	"transformIgnorePatterns": ["node_modules[/\\\\](?!@amcharts[/\\\\]amcharts4)"],
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules", ".next"]
 }

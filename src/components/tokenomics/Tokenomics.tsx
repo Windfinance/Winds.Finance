@@ -1,4 +1,6 @@
+import Chart from './components/Chart';
 import styles from './Tokenomics.module.scss';
+import Transactions from 'components/transactions';
 
 function Tokenomics() {
 	return (
@@ -33,20 +35,22 @@ function Tokenomics() {
 
 							<li>
 								<img src={require('assets/images/checkbox23.svg')} alt='avatar' />
-								5% goes to AirDrop Wallet which lands straight into top 400 holder's wallets{' '}
+								10% goes to AirDrop Wallet which lands straight into top 400 holder's wallets{' '}
 							</li>
 
 							<li>
 								<img src={require('assets/images/checkbox23.svg')} alt='avatar' />
-								10% has been reserved for contract and project development
+								5% has been reserved for contract and project development
 							</li>
 						</ul>
 					</div>
 
 					<div className={styles.box}>
-						<img src={require('assets/images/problemIcon.svg')} alt='avatar' />
+						<Chart />
 					</div>
 				</div>
+
+				<Transactions />
 			</div>
 		</div>
 	);
