@@ -3,15 +3,6 @@ const withImages = require('next-images');
 console.log('Using api endpoint: ', process.env.API_URL);
 
 module.exports = withPlugins([withImages], {
-	// async redirects() {
-	// 	return [
-	// 		{
-	// 			source: '/',
-	// 			destination: '/',
-	// 			permanent: true
-	// 		}
-	// 	];
-	// },
 	distDir: 'build',
 	env: {
 		NEXT_PUBLIC_API_URL: process.env.API_URL
