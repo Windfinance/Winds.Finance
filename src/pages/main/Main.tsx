@@ -10,8 +10,11 @@ import GetInTouch from 'components/getInTouch';
 import RoadMap from 'components/roadmap';
 import Tokenomics from 'components/tokenomics';
 import SmoothScroll from 'shared/functions/SmoothScroll';
+import { useRouter } from 'next/router';
 
 function Main() {
+	const router = useRouter();
+
 	const Scroll = (section: string) => {
 		SmoothScroll.scrollTo(section);
 	};
@@ -62,13 +65,29 @@ function Main() {
 						<div className={styles.copyright}>Copyright 2021 © Winds Finance</div>
 
 						<div className={styles.links}>
-							<img src={require('assets/images/twitter.svg')} alt='twitter' />
+							<img
+								src={require('assets/images/twitter.svg')}
+								alt='twitter'
+								onClick={() => router.push('https://twitter.com/WindsFinance')}
+							/>
 
-							<img src={require('assets/images/telegram.svg')} alt='telegram' />
+							<img
+								src={require('assets/images/telegram.svg')}
+								onClick={() => router.push('https://t.me/WindsFinance')}
+								alt='telegram'
+							/>
 
 							<img src={require('assets/images/email.svg')} alt='email' />
 
-							<img src={require('assets/images/medium.svg')} alt='medium' />
+							<img
+								src={require('assets/images/medium.svg')}
+								onClick={() =>
+									router.push(
+										'https://windfinancetoken.medium.com/winds-finance-the-new-era-of-decentralized-applications-has-begun-3a83cee9d329'
+									)
+								}
+								alt='medium'
+							/>
 						</div>
 					</div>
 				</div>

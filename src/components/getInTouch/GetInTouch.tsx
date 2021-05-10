@@ -2,8 +2,11 @@ import styles from './GetInTouch.module.scss';
 import { Form, Input, Button } from 'antd';
 import TextArea from 'antd/lib/input/TextArea';
 import Fade from 'react-reveal/Fade';
+import { useRouter } from 'next/router';
 
 function GetInTouch() {
+	const router = useRouter();
+
 	const onSubmit = values => {
 		console.log(values);
 	};
@@ -24,14 +27,20 @@ function GetInTouch() {
 							<p>contact@winds.finance</p>
 						</div>
 
-						<div>
+						<div
+							onClick={() =>
+								router.push(
+									'https://windfinancetoken.medium.com/winds-finance-the-new-era-of-decentralized-applications-has-begun-3a83cee9d329'
+								)
+							}
+						>
 							<span>
 								<img src={require('assets/images/medium.svg')} alt='medium' />
 							</span>{' '}
 							<p>Medium</p>
 						</div>
 
-						<div>
+						<div onClick={() => router.push('https://twitter.com/WindsFinance')}>
 							<span>
 								{' '}
 								<img src={require('assets/images/twitter.svg')} alt='twitter' />
@@ -39,7 +48,7 @@ function GetInTouch() {
 							<p>Twitter</p>
 						</div>
 
-						<div>
+						<div onClick={() => router.push('https://t.me/WindsFinance')}>
 							<span>
 								<img src={require('assets/images/telegram.svg')} alt='telegram' />
 							</span>{' '}
