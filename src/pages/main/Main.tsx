@@ -92,10 +92,6 @@ function Main() {
 					</div>
 				</div>
 			</div>
-			{/*
-			HEADER 
-
-			*/}
 		</div>
 	);
 }
