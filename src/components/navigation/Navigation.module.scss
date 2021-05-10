@@ -1,4 +1,5 @@
 @import 'assets/colors.scss';
+@import 'assets/variables.scss';
 
 .main {
 	display: flex;
@@ -13,7 +14,13 @@
 	top: 2rem;
 	left: 50%;
 	transform: translate(-50%, 0);
-	z-index: 123213132;
+
+	@media screen and (max-width: 956px) {
+		z-index: 123213132;
+		position: relative;
+		max-width: 90%;
+		transition: 250ms;
+	}
 
 	&__logo {
 		max-width: 19rem;
@@ -23,6 +30,14 @@
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: row;
+
+		@media screen and (max-width: 956px) {
+			display: none;
+		}
+
+		& > div {
+			z-index: 1232131223;
+		}
 
 		li {
 			margin-left: 4rem;
@@ -77,5 +92,45 @@
 				color: $color-white !important;
 			}
 		}
+	}
+
+	.navigation-mobile {
+		position: fixed;
+		top: 100%;
+		left: 0;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		box-shadow: 0px 1rem 4rem $color-shadow-grey;
+		background: $color-white;
+		align-items: center;
+		font-size: 2.2rem;
+		font-weight: bold;
+		margin: -10%;
+
+		li {
+			padding: 1rem;
+
+			a {
+				text-decoration: none;
+				color: $color-black;
+				font-weight: 500;
+				transition: ease-in-out;
+			}
+
+			&:last-of-type {
+				width: 100%;
+				height: 4.8rem;
+
+				a {
+					color: white;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		z-index: 12312321321213;
 	}
 }

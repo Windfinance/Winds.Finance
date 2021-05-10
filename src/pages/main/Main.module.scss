@@ -11,6 +11,10 @@
 			width: 60%;
 			margin: 0 auto;
 
+			@media screen and (max-width: 1050px) {
+				width: 95%;
+			}
+
 			img {
 				max-width: 19rem;
 			}
@@ -24,11 +28,20 @@
 			justify-items: center;
 			flex-direction: row;
 
+			@media screen and (max-width: 608px) {
+				flex-direction: column;
+			}
+
 			.nav {
 				ul {
 					display: flex;
 					align-items: center;
 					flex-direction: row;
+
+					@media screen and (max-width: 608px) {
+						padding-top: 2rem;
+						flex-direction: column;
+					}
 
 					li {
 						margin-right: 2rem;
@@ -53,6 +66,10 @@
 			justify-items: center;
 			justify-content: space-between;
 			border-top: 0.1px solid #afc6cb36;
+
+			@media screen and (max-width: 550px) {
+				flex-direction: column;
+			}
 
 			img {
 				margin-right: 2rem;

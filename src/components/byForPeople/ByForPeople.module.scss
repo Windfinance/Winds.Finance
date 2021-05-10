@@ -12,6 +12,12 @@
 	-o-background-size: cover;
 	background-size: cover;
 
+	@media screen and (max-width: 946px) {
+		padding-top: 14rem;
+		padding-bottom: 14rem;
+		background: none;
+	}
+
 	&__container {
 		width: 60%;
 		background-color: transparent;
@@ -25,6 +31,14 @@
 		padding: 3rem 4rem;
 		height: 32.8rem;
 		position: relative;
+
+		@media screen and (max-width: 760px) {
+			height: 100%;
+		}
+
+		@media screen and (max-width: 946px) {
+			width: 90%;
+		}
 
 		h2 {
 			color: $color-white;
@@ -50,6 +64,10 @@
 		right: -9rem;
 		transition: 300ms;
 
+		@media screen and (max-width: 760px) {
+			display: none;
+		}
+
 		&:hover {
 			-webkit-transform: translate(0px, -4px);
 			transform: translate(0px, -4px);
@@ -64,16 +82,19 @@
 		width: 80%;
 		justify-content: space-evenly;
 
+		@media screen and (max-width: 760px) {
+			width: 90%;
+			flex-direction: column;
+		}
+
 		button {
 			border-radius: 0.8rem;
 			height: 4.8rem;
 			color: #27df9d;
 			color: $color-white;
-			// background: linear-gradient(133.08deg, #3acbd0 10.54%, #11ca91 90.25%);
 			border: 0.1rem solid $color-white;
 			font-weight: bold;
 			width: 15rem;
-			// box-shadow: 0rem 1rem 2rem #ffffff69;
 			box-shadow: 0rem 0.1rem 1rem #ffffff69;
 			margin-top: 3rem;
 			display: flex;
@@ -82,18 +103,34 @@
 			text-transform: uppercase;
 			transition: 250ms ease-in-out;
 
+			@media screen and (max-width: 760px) {
+				width: 100%;
+				flex-direction: column;
+			}
+
 			&:first-of-type {
 				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
 				margin-right: 2rem;
+
+				@media screen and (max-width: 760px) {
+					margin-right: 0rem;
+				}
 			}
 
 			&:last-of-type {
-				background: linear-gradient(133.08deg, #ffffff78 10.54%, #11ca91 90.25%);
 				margin-left: 2rem;
+
+				@media screen and (max-width: 760px) {
+					margin-left: 0rem;
+				}
 			}
 
 			span {
 				padding-left: 1rem;
+
+				@media screen and (max-width: 760px) {
+					margin-left: 0rem;
+				}
 			}
 
 			img {

@@ -14,7 +14,6 @@
 	background-size: cover;
 
 	.container {
-		// width: 60%;
 		padding: 14rem 2.4rem 14rem 2.4rem;
 	}
 
@@ -37,6 +36,12 @@
 		display: flex;
 		flex-direction: row;
 
+		@media screen and (max-width: 1322px) {
+			flex-direction: column;
+			width: 95%;
+			align-items: center;
+		}
+
 		&__box {
 			width: 57rem;
 			align-items: flex-start;
@@ -49,18 +54,38 @@
 			background: $color-white;
 			min-width: 57.8rem;
 
+			@media screen and (max-width: 1322px) {
+				flex-direction: column;
+				min-width: unset;
+				width: 100%;
+				margin: 0 auto;
+			}
+
 			&:first-child {
 				margin-right: 2rem;
+
+				@media screen and (max-width: 1322px) {
+					margin: 0;
+				}
 			}
 
 			&:last-child {
 				margin-left: 1rem;
+
+				@media screen and (max-width: 1322px) {
+					margin-left: 0rem;
+					margin-top: 2rem;
+				}
 			}
 
 			img {
 				margin-right: 2rem;
 				max-width: 9.2rem;
 				width: 100%;
+
+				@media screen and (max-width: 1322px) {
+					display: none;
+				}
 			}
 
 			.text-container {

@@ -32,6 +32,10 @@
 			width: 100%;
 			width: 60%;
 			flex-wrap: wrap;
+
+			@media screen and (max-width: 450px) {
+				width: 90%;
+			}
 		}
 
 		.feature-box {
@@ -45,6 +49,14 @@
 			height: 20rem;
 			margin: 0 1rem 1rem;
 			transition: ease-in-out 250ms;
+
+			@media screen and (max-width: 772px) {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 450px) {
+				width: 100%;
+			}
 
 			&:hover {
 				transition: ease-in-out 250ms;
